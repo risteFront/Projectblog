@@ -1,0 +1,23 @@
+<div class="col-md-4">
+	<form ng-submit="loginForm()">
+	<h2>Login Form</h2>
+		<div data-alert  ng-show="msg" class="alert alert-danger">{{showmsg}}</div>
+
+	<div class="form-group">
+		<label>Email</label>
+		<input class="form-control"ng-model="email"placeholder="E-mail"type="email"required>
+	</div>
+	<div class="form-group">
+		<label>Password</label>
+		<input class="form-control"ng-model="password"placeholder="Password"type="password"required>
+	</div>
+	<div class="row">	
+		<div class="col-md-6">
+			<input type="submit"class="btn btn-primary"value="Login">
+		</div>
+		<div class="col-md-4">
+			<a href=""ng-click="logOut()">Log out</a>
+		</div>
+	</div>
+	</form>
+</div>
